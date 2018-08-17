@@ -1,0 +1,46 @@
+@import url("common.css");
+
+p {
+    font-size: larger;
+}
+
+h1, h2 {
+    background-color: #008000;
+}
+
+div {
+    background-color: #DA0000;
+}
+
+p {
+    background-color: #0000FF;
+}
+
+#content {
+    background-color: yellow;
+}
+
+.quotation {
+    background-color: purple;
+}
+
+div p {
+    background-color: #DDDDAA;
+}
+
+div > p {
+    background-color: gray;
+    background-image: url("https://imaging.nikon.com/lineup/lens/zoom/normalzoom/af-s_dx_18-140mmf_35-56g_ed_vr/img/sample/sample1_l.jpg");
+}
+
+p {
+    font-size: 1.2em;
+    border-style: solid;
+    border-color: black;
+    border-width: 1mm;
+    width: 200px;
+}
+
+div {
+    width: 50%;
+}
