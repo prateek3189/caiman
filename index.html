@@ -5,30 +5,214 @@
         <title>Caiman - CSS</title>
         <link rel="icon" href="./images/logo.jpg" type="image/gif" sizes="16x16">
         <link rel="stylesheet" href="./css/style.css">
-        <!-- <style media="screen" type="text/css">
+        <style media="screen" type="text/css">
             body {
-                background-color: BlanchedAlmond;
+                background: BlanchedAlmond;
             }
-        </style> -->
+        </style>
     </head>
     <body>
-        <h1>
-            <a href="./index.html">
-                <img src="./images/logo.jpg" alt="Caiman" width="125px">
-            </a>
-            Caiman - CSS
-        </h1>
-        <h2>Heading 2</h2>
-        <p>This is a Paragraph</p>
+        <!-- Starts Here -->
+        <h1>Caiman - CSS</h1>
 
-        <div class="quotation">This is a DIV</div>
+        <hr>
+        <h2>Adding Some Style</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+        <hr>
+        <h2>CSS Levels</h2>
+        <p><a href="https://www.w3.org/Style/CSS/" target="_blank">https://www.w3.org/Style/CSS/</a></p>
+
+        <hr>
+        <h2>Simple Selector</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="quotation">
+            This is a div tag
+        </div>
         <div class="">
-            <p id="content">Paragraph inside the div
-                <p>Paragraph inside another Paragraph which is inside a DIV</p>
-            </p>
+            <p id="content">This is a paragraph inside the div</p>
         </div>
 
-        <a href="./index.html">Refresh The Page</a>
+        <hr>
+        <h2>Other Selector</h2>
+        <div class="descendent-selector">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div class="child-selector">
+            <div class="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div class="attribute-selector">
+            <img src="./images/butterfly.jpg" alt="spacer">
+        </div>
+
+        <hr>
+        <h2>Specifying Property Values</h2>
+        <div class="spv">
+            <h3>This is Heading 3</h3>
+            <h4>This is heading 4</h4>
+            <p>This is a paragraph.</p>
+            <div class="">
+                <p>This is a paragraph inside the div</p>
+            </div>
+        </div>
+
+        <hr>
+        <h2>Cascading and Inheritence</h2>
+        <div class="cascade">
+            <h3>This is Heading 3</h3>
+            <h4>This is heading 4</h4>
+            <p>This is a paragraph.</p>
+            <div class="">
+                <p>This is a paragraph inside the div</p>
+            </div>
+            <a href="http://www.google.com">Google</a>
+        </div>
+
+        <hr>
+        <h2>CSS Specificity</h2>
+        <div class="specificity">
+            <h3>This is Heading 3</h3>
+            <h4>This is heading 4</h4>
+            <p>This is a paragraph.</p>
+            <div class="">
+                <p id="content" style="background-color: black; color: white;">This is a paragraph inside the div</p>
+            </div>
+            <a href="http://www.google.com">Google</a>
+        </div>
+
+        <hr>
+        <h2>CSS Inheritence</h2>
+        <div class="inheritence">
+            <h3>This is Heading 3</h3>
+            <h4>This is heading 4</h4>
+            <p>This is a paragraph.</p>
+            <div class="">
+                This is a div
+            </div>
+            <div class="">
+                <p>This is a paragraph inside the div</p>
+            </div>
+            <a href="http://www.google.com">Google</a>
+        </div>
+
+        <hr>
+        <h2>Box modal</h2>
+        <div class="box">
+            <ul>
+                <li>
+                    <a href="#">CSS Specification</a>
+                </li>
+                <li>
+                    <a href="#">CSS Zen Garden</a>
+                </li>
+                <li>
+                    <a href="#">CSS Blueprint</a>
+                </li>
+                <li>
+                    <a href="#">YUI</a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+        <h2>Display and Visibility</h2>
+        <div class="dis-vis">
+            <ul>
+                <li>
+                    <a href="#">CSS Specification</a>
+                </li>
+                <li>
+                    <a href="#">CSS Zen Garden</a>
+                </li>
+                <li>
+                    <a href="#">CSS Blueprint</a>
+                </li>
+                <li>
+                    <a href="#">YUI</a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+        <h2>Navigation</h2>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">CSS Specification</a>
+                </li>
+                <li>
+                    <a href="#">CSS Zen Garden</a>
+                </li>
+                <li>
+                    <a href="#">CSS Blueprint</a>
+                </li>
+                <li>
+                    <a href="#">YUI</a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+        <h2>Styling Text and Fonts</h2>
+        <div class="text">
+            <p class="a">Text Indent</p>
+            <p class="b">Letter Spacing</p>
+            <p class="c">Word Spacing</p>
+            <p class="d">Text Decoration</p>
+            <p class="e">Text Align</p>
+            <p class="f">Line Height</p>
+        </div>
+
+        <hr>
+        <h2>Position</h2>
+        <div class="position">
+            To understand positioning
+
+            <div class="relative">
+                <div class="absolute">
+                    This is a absolute div
+                </div>
+            </div>
+            <div class="fixed">
+                This is a fixed div
+            </div>
+            <div class="sticky">
+                This is a sticky div
+            </div>
+        </div>
+
+        <hr>
+        <h2>Float</h2>
+        <div class="float-left-container">
+            <img src="./images/butterfly.jpg" width="100px" alt="">
+
+            This is float left. adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+
+        <div class="float-right-container">
+            <img src="./images/butterfly.jpg" width="100px" alt="">
+
+            This is float right. adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+
+        <div class="float-clear-container">
+            <img src="./images/butterfly.jpg" width="100px" alt="">
+
+            <p>This is Clear. adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <hr>
+        <h2>Layout</h2>
+        <a href="./layout.html">2 column layout</a>
+        <a href="./layout3.html">3 column Layouts</a>
+        <!-- Ends Here -->
     </body>
 </html>

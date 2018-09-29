@@ -4,6 +4,22 @@
 
 body {
     background-color: BlanchedAlmond;
-    margin: 0;
-    padding: 0;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+p {
+    font-size: larger;
+}
+
+h1 {
+    font-size: 1.7em
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+.cascade p {
+    background-color: gray;
 }

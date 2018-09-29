@@ -1,46 +1,316 @@
 @import url("common.css");
 
-p {
-    font-size: larger;
+h1, h2 {
+    background-color: black;
+    color: red;
+    padding: 5px;
 }
 
-h1, h2 {
-    background-color: #008000;
+h3, h4 {
+    background-color: violet;
 }
 
 div {
-    background-color: #DA0000;
+    background-color: indigo;
 }
 
 p {
-    background-color: #0000FF;
+    background-color: blue;
 }
 
 #content {
-    background-color: yellow;
+    background-color: green;
 }
 
 .quotation {
-    background-color: purple;
+    background-color: yellow;
 }
 
-div p {
-    background-color: #DDDDAA;
+.descendent-selector p {
+    background-color: orange;
 }
 
-div > p {
-    background-color: gray;
-    background-image: url("https://imaging.nikon.com/lineup/lens/zoom/normalzoom/af-s_dx_18-140mmf_35-56g_ed_vr/img/sample/sample1_l.jpg");
+.child-selector > p {
+    background-color: red;
 }
 
-p {
-    font-size: 1.2em;
-    border-style: solid;
-    border-color: black;
-    border-width: 1mm;
-    width: 200px;
+img[alt=spacer] {
+    width: 250px;
 }
 
-div {
+a:visited {
+    color: violet;
+}
+
+/* This is a comment in CSS */
+
+.spv {
+    background-color: BlanchedAlmond;
+}
+
+.spv p {
+    font-size: 2em;
+    border: 3px solid red;
     width: 50%;
+}
+
+.spv div {
+    width: 50%;
+    background-image: url("../images/butterfly.jpg");
+}
+
+
+/* Cascade */
+.cascade {
+    background-color: BlanchedAlmond;
+}
+.cascade h3 {}
+
+.cascade h4 {}
+
+.cascade div {}
+
+.cascade p {
+    background-color: green;
+}
+
+.cascade div p {}
+
+.cascade a {}
+
+/* Specificity */
+.specificity {
+    background-color: BlanchedAlmond;
+}
+.specificity h3 {}
+
+.specificity h4 {}
+
+.specificity div {}
+
+.specificity p {
+    background-color: green;
+    font-size: 2em;
+}
+
+.specificity div p {
+    background-color: gray;
+}
+
+.specificity a {}
+
+.specificity #content {
+    background-color: fuchsia;
+}
+
+/* inheritence */
+.inheritence {
+    background-color: BlanchedAlmond;
+}
+.inheritence h3 {}
+
+.inheritence h4 {}
+
+.inheritence div {
+    font-size: 8px;
+    color: white;
+    border: 2px solid red;
+}
+
+.inheritence p {
+    font-size: 22px;
+}
+
+.inheritence div p {
+    background-color: gray;
+    border: inherit;
+}
+
+.inheritence a {}
+
+/* Box modal */
+.box {
+    background-color: BlanchedAlmond;
+}
+.box ul {
+    background-color: BlanchedAlmond;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.box ul li {
+    width: 150px;
+    text-align: center;
+    background-color: #CCCC99;
+    padding: 3px 0 0 10px;
+    margin: 5px;
+    border-bottom: 3px solid black;
+    border-left: 10px solid #CC3333;
+}
+
+.box ul li a {}
+
+/* display and Visibility */
+.dis-vis {
+    background-color: BlanchedAlmond;
+}
+.dis-vis ul {
+    background-color: BlanchedAlmond;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/*
+.dis-vis ul li:nth-child(3) {
+    visibility: hidden;
+}
+
+.dis-vis ul li:nth-child(2) {
+    display: none;
+} */
+
+.dis-vis ul li {
+    width: 150px;
+    text-align: center;
+    background-color: #CCCC99;
+    padding: 3px 0 0 10px;
+    margin: 5px;
+    border-bottom: 3px solid black;
+    border-left: 10px solid #CC3333;
+    display: inline-block;
+}
+
+.dis-vis ul li a {}
+
+.navigation {
+    background-color: BlanchedAlmond;
+}
+
+.navigation ul {
+    background-color: BlanchedAlmond;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navigation ul li {
+    width: 130px;
+    text-align: center;
+    background-color: #CCCC99;
+    padding: 3px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.navigation ul li:hover {
+    background: #CC99CC;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.text {
+    background-color: BlanchedAlmond;
+}
+
+.text p.a { text-indent: 3em;}
+.text p.b { letter-spacing: 2em; }
+.text p.c {word-spacing: 2em; }
+.text p.d { text-decoration: line-through;}
+.text p.e { text-align: center; }
+.text p.f { line-height: 2em; }
+
+.position {
+    border: 1px solid #666666;
+    background: #CCCCCC;
+    width: 500px;
+    min-height: 300px;
+    padding: 10px;
+}
+
+.position div {
+    width: 200px;
+    height: 200px;
+    background: #666666;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.position .relative {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    margin: 10px;
+}
+
+.position .relative .absolute {
+    width: 100px;
+    height: 100px;
+    background: #CCCCCC;
+    color: #666666;
+    top: -10px;
+    left: -10px;
+    position: absolute;
+    border: 1px solid red;
+}
+
+.position .fixed {
+    width: 100px;
+    height: 300px;
+    background: orange;
+    color: #000000;
+    position: fixed;
+    top: 100px;
+    right: 0;
+}
+
+.position .sticky {
+    position: sticky;
+    top: -100px;
+    left: -100px;
+    border: 1px solid red;
+}
+
+.float-left-container, .float-right-container, .float-clear-container {
+    color: white;
+    margin: 5px;
+}
+
+.float-left-container img {
+    float: left;
+    margin: 10px;
+}
+
+.float-right-container img {
+    float: right;
+    margin: 10px;
+}
+
+.float-clear-container img {
+    float: left;
+}
+.float-clear-container p {
+    clear: both;
+}
+
+/* Two column layout */
+.author-info {
+    float: right;
+    width: 30%;
+}
+
+.content {
+    float: left;
+    width: 60%;
+}
+
+/* 3-Column Layout */
+
+.links {
+    float: left;
+    margin-right: 10px; 
 }
